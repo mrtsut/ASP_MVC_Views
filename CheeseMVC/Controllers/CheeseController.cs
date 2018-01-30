@@ -24,6 +24,9 @@ namespace CheeseMVC.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [Route("/Cheese/Add")]
         public IActionResult NewCheese(string name)
         {
             // Add the new chese to my existing cheeses
